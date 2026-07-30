@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Śrī Kāśī Viśvanātha Jyotiṣa, Vāstu Paramarśa evaṃ Anuṣṭhāna Kendra</title>
+    <meta name="description" content="Official website of Dr. Shivesh Kumar Ojha, Sanskrit Scholar, Vedic Teacher, Kāṇva Śākhā, Śukla Yajurveda. Traditional Vedic rituals, Jyotiṣa, Vāstu consultation and Anuṣṭhānas.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Merriweather:wght@300;400;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- Page-specific override: 3-per-row / 2-row services grid (6 cards, 3 + 3) -->
+    <style>
+        .services-grid {
+            display: grid !important;
+            grid-template-columns: repeat(3, 1fr) !important;
+            gap: 30px;
+        }
+        @media (max-width: 900px) {
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+        @media (max-width: 600px) {
+            .services-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="logo.png" alt="Institution Logo" class="site-logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="articles.html">Articles</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+    <a href="mailto:drojhashivesh@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+    <a href="https://wa.me/918840240775" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+</div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+    <div class="nav-overlay" id="navOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="subtitle">वैदिक ज्ञान परम्परा</p>
+            
+            <div class="sanskrit-motto">
+                <p>विद्या ददाति विनयम्</p>
+                <span>Vidyā Dadāti Vinayam</span>
+            </div>
+
+            <h1>
+                Śrī Kāśī Viśvanātha Jyotiṣa,<br>
+                Vāstu Paramarśa evaṃ<br>
+                Anuṣṭhāna Kendra
+            </h1>
+
+            <h2>
+                श्री काशी विश्वनाथ ज्योतिष,<br>
+                वास्तु परामर्श एवं अनुष्ठान केन्द्र
+            </h2>
+
+            <div class="divider"></div>
+
+            <h3>Dr. Shivesh Kumar Ojha</h3>
+
+            <p class="designation">
+                Sanskrit Scholar • Vedic Teacher<br>
+                Kāṇva Śākhā , Śukla Yajurveda
+            </p>
+
+            <p class="qualification">
+                Ph.D. (Veda Department)<br>
+                Sampurnanand Sanskrit Vishwavidyalaya, Varanasi
+            </p>
+
+            <div class="hero-buttons">
+                <a href="https://wa.me/918840240775" target="_blank" class="btn whatsapp-btn">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:drojhashivesh@gmail.com" class="btn email-btn">
+                    <i class="fa-solid fa-envelope"></i> Email
+                </a>
+            </div>
+
+            <a href="https://wa.me/918840240775?text=Namaste%20Dr.%20Shivesh%20Kumar%20Ojha.%20I%20would%20like%20to%20book%20a%20consultation."
+               target="_blank" class="consultation-btn">
+                <i class="fa-regular fa-calendar-check"></i> Book a Consultation
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <div class="image-placeholder">Founder Photograph</div>
+        </div>
+    </section>
+
+    <!-- Sacred Quote Section -->
+    <section class="quote">
+        <div class="container">
+            <h2>
+                विद्या ददाति विनयं विनयाद् याति पात्रताम् ।<br>
+                पात्रत्वात् धनमाप्नोति धनात् धर्मं ततः सुखम् ॥
+            </h2>
+            <p>
+                Vidyā dadāti vinayaṃ, vinayād yāti pātratām |<br>
+                Pātratvāt dhanam āpnoti, dhanāt dharmaṃ tataḥ sukham ||
+            </p>
+            <span>
+                "Knowledge gives humility. Humility leads to worthiness; worthiness to prosperity; prosperity supports righteousness, and righteousness leads to lasting well-being."
+            </span>
+        </div>
+    </section>
+
+    <!-- About Preview Section -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-left">
+                <h2>About Dr. Shivesh Kumar Ojha</h2>
+                <p>
+                    A dedicated Sanskrit scholar and Vedic teacher with continuous traditional Vedic education since 2003. Dr. Shivesh Kumar Ojha specializes in Vedic rituals, Jyotiṣa, Vāstu consultation, and the performance of authentic Sanātana Dharma ceremonies according to scriptural tradition.
+                </p>
+                <ul>
+                    <li>✔ Ph.D. – Sampurnanand Sanskrit Vishwavidyalaya</li>
+                    <li>✔ Diploma in Jyotiṣa & Vāstu – Banaras Hindu University</li>
+                    <li>✔ Vedic Teacher</li>
+                    <li>✔ Kāṇva Śākhā , Śukla Yajurveda</li>
+                    <li>✔ Online & Offline Consultation</li>
+                </ul>
+                <a href="about.html" class="primary-btn">Read More</a>
+            </div>
+            <div class="about-right">
+                <img src="founder.jpg" alt="Dr. Shivesh Kumar Ojha" class="about-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Organization Section -->
+    <section class="organization">
+        <div class="container">
+            <div class="section-heading">
+                <span>Our Institution</span>
+                <h2>Śrī Kāśī Viśvanātha Jyotiṣa, Vāstu Paramarśa evaṃ Anuṣṭhāna Kendra</h2>
+                <p>
+                    Dedicated to preserving the timeless wisdom of the Vedic tradition
+                    through authentic learning, scripturally grounded guidance, and
+                    traditional religious practices.
+                </p>
+            </div>
+
+            <div class="org-grid">
+                <div class="org-card">
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Traditional Learning</h3>
+                    <p>Promotion of Sanskrit, Vedic studies and traditional knowledge for future generations.</p>
+                </div>
+                <div class="org-card">
+                    <i class="fa-solid fa-fire"></i>
+                    <h3>Authentic Rituals</h3>
+                    <p>Performance of scripturally authentic Vedic rituals and Anuṣṭhānas according to tradition.</p>
+                </div>
+                <div class="org-card">
+                    <i class="fa-solid fa-landmark"></i>
+                    <h3>Guidance</h3>
+                    <p>Jyotiṣa, Vāstu and Dhārmika consultation with emphasis on scriptural authenticity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-preview">
+        <div class="container">
+            <div class="section-heading">
+                <span>Services</span>
+                <h2>Traditional Vedic Services</h2>
+                <p>Services are offered with adherence to the traditional Sanātana Dharma and Vedic scriptures.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" onclick="openServiceModal('samskara')">
+                    <i class="fa-solid fa-om"></i>
+                    <h3>Ṣoḍaśa Saṃskāras</h3>
+                    <p>Vivāha, Upanayana, Nāmakaraṇa, Annaprāśana, Muṇḍana, Gṛha Praveśa and other traditional Saṃskāras.</p>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('yajna')">
+                    <i class="fa-solid fa-fire-flame-curved"></i>
+                    <h3>Yajñas & Anuṣṭhānas</h3>
+                    <p>Rudrābhiṣeka, Mahāmṛtyuñjaya, Navagraha Śānti, Homa, Yajña, Satyanārāyaṇa Kathā, Prāṇa Pratiṣṭhā and more.</p>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('jyotisha')">
+                    <i class="fa-solid fa-star-and-crescent"></i>
+                    <h3>Jyotiṣa</h3>
+                    <p>Kuṇḍalī Preparation, Kuṇḍalī Phalādeśa, Muhūrta, Marriage Compatibility, General Consultation.</p>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('vastu')">
+                    <i class="fa-solid fa-house"></i>
+                    <h3>Vāstu</h3>
+                    <p>Residential & Commercial Vāstu Consultation, Vāstu Guidance, Traditional Recommendations.</p>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('online')">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>Online Consultation</h3>
+                    <p>Video Consultation, Online Guidance, Online Ritual Assistance (where appropriate).</p>
+                </div>
+
+                <div class="service-card" onclick="openServiceModal('teaching')">
+                    <i class="fa-solid fa-user-graduate"></i>
+                    <h3>Teaching</h3>
+                    <p>Traditional Sanskrit, Vedic Learning, Scriptural Guidance, Educational Activities.</p>
+                </div>
+            </div>
+
+            <div class="center-button">
+                <a href="services.html" class="primary-btn">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-box">
+                <h2>20+</h2>
+                <p>Years of Vedic Study</p>
+            </div>
+            <div class="stat-box">
+                <h2>2003</h2>
+                <p>Continuous Traditional Learning</p>
+            </div>
+            <div class="stat-box">
+                <h2>2</h2>
+                <p>Primary Service Cities</p>
+            </div>
+            <div class="stat-box">
+                <h2>Online</h2>
+                <p>Consultation Available Worldwide</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-preview">
+        <div class="container">
+            <div class="section-heading">
+                <span>Gallery</span>
+                <h2>सम्मान एवं सान्निध्य के स्मरणीय क्षण</h2>
+                <p>परम पूज्य आचार्यों एवं विशिष्ट महानुभावों के सान्निध्य में प्राप्त सम्मान एवं आशीर्वाद के स्मरणीय अवसर।</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/images/photo1.jpg" alt="Blessing from Jagadguru Shankaracharya Swami Avimukteshwaranand Saraswati Ji">
+                    <p>उत्तराम्नाय ज्योतिषपीठाधीश्वर जगद्गुरु शंकराचार्य स्वामी श्री अविमुक्तेश्वरानंद सरस्वती जी महाराज से सम्मान ग्रहण करते हुए</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo2.jpg" alt="Blessing from Jagadguru Shankaracharya Swami Vidhusekhara Bharati Ji">
+                    <p>दक्षिणाम्नाय श्री शृंगेरी पीठाधीश्वर जगद्गुरु शंकराचार्य स्वामी विधुशेखर भारती जी महाराज से सम्मान ग्रहण करते हुए</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo3.jpg" alt="With Jagadguru Ramanujacharya Vidyabhaskar Ji">
+                    <p>जगद्गुरु रामानुजाचार्य विद्याभास्कर जी महाराज के सान्निध्य में</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/images/photo4.jpg" alt="Inauguration Puja with Minister Shri Manoj Kumar Pandey">
+                    <p>उत्तर प्रदेश सरकार के खाद्य एवं रसद मंत्री माननीय श्री मनोज कुमार पाण्डेय जी के नूतन कार्यालय के उद्घाटन पूजन अवसर पर, लखनऊ, उत्तर प्रदेश</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Articles Section -->
+    <section class="articles-preview">
+        <div class="container">
+            <div class="section-heading">
+                <span>Articles</span>
+                <h2>Research & Spiritual Insights</h2>
+                <p>Scholarly articles on Sanskrit, Vedas, Jyotiṣa, Vāstu, and Sanātana Dharma.</p>
+            </div>
+            <!-- Dynamic placeholder for article cards, links, or feeds can be injected here -->
+        </div>
+    </section>
+
+    <!-- Contact Preview Section -->
+    <section class="contact-preview">
+        <div class="container">
+            <div class="section-heading">
+                <span>Contact</span>
+                <h2>Get in Touch</h2>
+            </div>
+            <p>📍 Varanasi | Lucknow</p>
+            <p>📧 drojhashivesh@gmail.com</p>
+            <p>📱 +91 8840240775</p>
+            <a href="https://wa.me/918840240775" target="_blank" class="primary-btn">Contact on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- Footer & Universal Modals -->
+    <footer>
+        <div class="container">
+            <h3>Śrī Kāśī Viśvanātha Jyotiṣa, Vāstu Paramarśa evaṃ Anuṣṭhāna Kendra</h3>
+            <p>श्री काशी विश्वनाथ ज्योतिष, वास्तु परामर्श एवं अनुष्ठान केन्द्र</p>
+            <p>Dr. Shivesh Kumar Ojha</p>
+            
+            <div class="footer-icons">
+                <a href="mailto:drojhashivesh@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://wa.me/918840240775" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <p>© 2026 All Rights Reserved.</p>
+        </div>
+
+        <!-- Universal Service Display Modal Window Popup -->
+        <div id="serviceModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeServiceModal()">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
+                <ul id="modalList"></ul>
+                <a href="https://wa.me/918840240775" class="consultation-btn" target="_blank">📅 Book Consultation</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bottom Fixed WhatsApp Launcher Icon -->
+    <a href="https://wa.me/918840240775" class="floating-whatsapp" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- External Script Integration -->
+    <script src="js/script.js"></script>
+
+    <!-- Mobile Navigation Toggle -->
+    <script>
+        (function () {
+            var menuToggle = document.getElementById('menuToggle');
+            var navLinks = document.querySelector('.nav-links');
+            var navOverlay = document.getElementById('navOverlay');
+
+            if (!menuToggle || !navLinks || !navOverlay) return;
+
+            function closeMenu() {
+                navLinks.classList.remove('active');
+                navOverlay.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                document.body.classList.remove('nav-open');
+            }
+
+            function toggleMenu() {
+                var isOpen = navLinks.classList.toggle('active');
+                navOverlay.classList.toggle('active', isOpen);
+                menuToggle.setAttribute('aria-expanded', String(isOpen));
+                document.body.classList.toggle('nav-open', isOpen);
+            }
+
+            menuToggle.addEventListener('click', toggleMenu);
+            navOverlay.addEventListener('click', closeMenu);
+            navLinks.querySelectorAll('a').forEach(function (link) {
+                link.addEventListener('click', closeMenu);
+            });
+            window.addEventListener('resize', function () {
+                if (window.innerWidth > 900) closeMenu();
+            });
+        })();
+    </script>
+</body>
+</html>

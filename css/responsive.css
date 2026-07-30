@@ -1,0 +1,255 @@
+/* ================================================
+   RESPONSIVE STYLES
+   Mobile navigation (hamburger menu) + layout
+   adjustments for tablet and phone screens.
+   Loaded after style.css, so rules here override it.
+================================================ */
+
+/* Safety net: prevents any accidental horizontal scroll on phones */
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+/* ---------- Hamburger button (hidden on desktop) ---------- */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: var(--maroon);
+    cursor: pointer;
+    padding: 6px;
+    line-height: 1;
+    justify-self: end;
+}
+
+.menu-toggle i {
+    pointer-events: none;
+}
+
+/* Dark backdrop shown behind the open mobile menu */
+.nav-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1040;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.nav-overlay.active {
+    display: block;
+    opacity: 1;
+}
+
+body.nav-open {
+    overflow: hidden;
+}
+
+/* ================================================
+   TABLET & BELOW (<= 900px)
+================================================ */
+@media (max-width: 900px) {
+
+    /* ---- Navbar / hamburger menu ---- */
+    .navbar {
+        grid-template-columns: auto 1fr auto;
+        padding: 12px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 3;
+    }
+
+    .nav-buttons {
+        width: auto;
+        gap: 14px;
+        order: 2;
+        margin-right: 8px;
+    }
+
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 78%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--cream);
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        padding: 110px 30px 40px;
+        box-shadow: -6px 0 30px rgba(0, 0, 0, 0.15);
+        transition: right 0.35s ease;
+        z-index: 1050;
+        overflow-y: auto;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .nav-links li {
+        width: 100%;
+        border-bottom: 1px solid var(--border-gold);
+    }
+
+    .nav-links a {
+        display: block;
+        padding: 16px 2px;
+        font-size: 18px;
+    }
+
+    body {
+        padding-top: 92px;
+    }
+
+    /* ---- Homepage sections ---- */
+    .about-preview .container {
+        grid-template-columns: 1fr;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .org-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stats .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px 20px;
+    }
+
+    /* ---- Common section heading ---- */
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .hero h1 {
+        margin: 16px 0;
+    }
+}
+
+/* ================================================
+   MOBILE (<= 600px)
+================================================ */
+@media (max-width: 600px) {
+
+    .navbar {
+        padding: 10px 16px;
+    }
+
+    .logo,
+    .site-logo {
+        width: 54px;
+        height: 54px;
+    }
+
+    body {
+        padding-top: 80px;
+    }
+
+    .container {
+        width: 92%;
+    }
+
+    .nav-links {
+        width: 82%;
+        padding: 100px 24px 30px;
+    }
+
+    /* ---- Hero ---- */
+    .hero {
+        padding: 50px 16px;
+    }
+
+    .hero h2 {
+        font-size: 17px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 14px;
+    }
+
+    .primary-btn,
+    .secondary-btn,
+    .hero-buttons .btn {
+        text-align: center;
+    }
+
+    /* ---- Section heading ---- */
+    .section-heading h2 {
+        font-size: 26px;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    /* ---- Homepage ---- */
+    .org-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px 14px;
+    }
+
+    .stat-box h2 {
+        font-size: 32px;
+    }
+
+    /* ---- About hero name/title ---- */
+    .hero h3 {
+        font-size: 28px;
+    }
+
+    /* ---- Contact CTA buttons ---- */
+    .contact-cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    /* ---- Process timeline numbers already stack via style.css;
+       just tighten spacing here ---- */
+    .process-step h3 {
+        font-size: 16px;
+    }
+
+    /* ---- Timeline (About > Journey) ---- */
+    .timeline {
+        padding-left: 28px;
+    }
+
+    .timeline-item::before {
+        left: -35px;
+    }
+}
+
+/* ================================================
+   SMALL PHONES (<= 400px)
+================================================ */
+@media (max-width: 400px) {
+    .nav-links {
+        width: 88%;
+        max-width: none;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .stats .container {
+        grid-template-columns: 1fr;
+    }
+}
