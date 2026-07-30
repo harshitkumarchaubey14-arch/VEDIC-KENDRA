@@ -296,9 +296,10 @@
 
             menuToggle.addEventListener('click', toggleMenu);
             navOverlay.addEventListener('click', closeMenu);
-            navLinks.querySelectorAll('a').forEach(function (link) {
-                link.addEventListener('click', closeMenu);
-            });
+            /* Links are NOT given a closeMenu click-handler — tapping a
+               link navigates to a new page anyway, which closes the menu
+               automatically. Attaching closeMenu() here was cancelling
+               navigation on some mobile browsers. */
             window.addEventListener('resize', function () {
                 if (window.innerWidth > 900) closeMenu();
             });

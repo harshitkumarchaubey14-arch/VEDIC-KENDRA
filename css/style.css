@@ -98,7 +98,7 @@ header {
     position:fixed;
     top:0;
     left:0;
-    z-index:1000;
+    z-index:1060;
     border-bottom:1px solid var(--border-gold);
     box-shadow:0 4px 25px rgba(0,0,0,.05);
 }
