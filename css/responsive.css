@@ -49,6 +49,12 @@ body.nav-open {
     overflow: hidden;
 }
 
+/* Hide floating WhatsApp bubble while mobile menu is open, so it can never
+   sit on top of or interfere with the nav links */
+body.nav-open .floating-whatsapp {
+    display: none;
+}
+
 /* ================================================
    TABLET & BELOW (<= 900px)
 ================================================ */
@@ -176,7 +182,7 @@ body.nav-open {
 
     .hero-buttons {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         gap: 14px;
     }
 
@@ -184,6 +190,9 @@ body.nav-open {
     .secondary-btn,
     .hero-buttons .btn {
         text-align: center;
+        justify-content: center;
+        width: 80%;
+        max-width: 280px;
     }
 
     /* ---- Section heading ---- */
@@ -217,7 +226,13 @@ body.nav-open {
     /* ---- Contact CTA buttons ---- */
     .contact-cta-buttons {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
+    }
+
+    .contact-cta-buttons .btn {
+        width: 80%;
+        max-width: 280px;
+        justify-content: center;
     }
 
     /* ---- Process timeline numbers already stack via style.css;
