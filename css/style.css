@@ -2672,3 +2672,10 @@ cursor:pointer;
         padding: 45px 22px;
     }
 }
+.video-caption {
+    text-align: center;
+    color: var(--maroon);
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 10px;
+}
